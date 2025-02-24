@@ -1,9 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  // Indica a Tailwind dónde buscar las clases para purgar y generar los estilos.
+  content: [
+    "./src/**/*.{html,ts}",
+  ],
   theme: {
     extend: {},
   },
   plugins: [],
 }
-
