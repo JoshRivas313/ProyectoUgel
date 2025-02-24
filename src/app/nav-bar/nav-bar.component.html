@@ -1,22 +1,19 @@
-<nav class="bg-gray-100 shadow-md">
-  <div class="container mx-auto flex items-center justify-between p-4">
+<nav class="bg-blue-900 w-full shadow-md p-1">
+
+  <div class="w-full flex items-center justify-between m-4">
     <!-- Logo -->
-    <div class="flex items-center space-x-2">
-      <img src="/logo.png" alt="UGEL Santa" class="h-8" />
-      <span class="font-semibold text-lg text-gray-800">UGEL Santa</span>
-    </div>
-
-    <!-- Menú -->
-    <div class="hidden md:flex space-x-6">
-      <a href="#" class="text-gray-700 hover:text-gray-900">Inicio</a>
-      <a href="#" class="text-gray-700 hover:text-gray-900">Conócenos</a>
-      <a href="#" class="text-gray-700 hover:text-gray-900">Equipo</a>
-      <a href="#" class="text-gray-700 hover:text-gray-900">Dashboard</a>
-    </div>
-
-    <!-- Botón Destacado -->
-    <a href="#" class="bg-blue-700 text-white px-4 py-2 rounded-md hover:bg-blue-800">
-      Portal Educativo
+    <a href="/" class="flex items-center font-bold text-xl ">
+      <img src="assets/Logo.png" alt="Imagen Ugel" class="h-14 w-16 transition-transform duration-300 hover:scale-110">
     </a>
+
+    <!-- Menú Principal -->
+    <ul class="hidden md:flex  items-center gap-x-3 mr-12">
+      <li *ngFor="let item of NavItems">
+        <a [href]="item.link"
+          class="text-white text-lg rounded-lg px-4">
+          {{ item.name }}
+        </a>
+      </li>
+    </ul>
   </div>
 </nav>
