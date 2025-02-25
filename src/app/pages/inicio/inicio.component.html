@@ -1,6 +1,7 @@
-<div class="relative bg-blue-900 px-6 md:px-20 pt-12 flex flex-col md:flex-row items-center justify-between gap-10">
+<div class="relative bg-blue-900 px-6 pt-6 md:px-20 flex flex-col md:flex-row items-center justify-between gap-10">
 
-  <div class="max-w-lg text-center md:text-left">
+  <div class="max-w-lg text-center md:text-left animate-fadeIn">
+
     <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight">
       UGEL Santa: <br>
       <span class="text-blue-300">Educación</span> del <br>
@@ -11,15 +12,21 @@
       Impulsando la innovación y excelencia en la <br class="hidden md:inline">
       educación para formar a los líderes del mañana.
     </p>
+
+    <app-buton texto="Información" ></app-buton>
+
   </div>
 
+  <!-- Contenedor de la Imagen con Decoración -->
   <div class="w-full md:w-1/2 flex justify-center relative">
-    <div class="absolute inset-0 w-40 h-40 bg-blue-300 rounded-full blur-2xl opacity-50"></div>
+    <div class="absolute -top-10 right-10 w-40 h-40 bg-blue-400 rounded-full blur-3xl opacity-30 animate-pulse"></div>
+    <div class="absolute bottom-0 left-5 w-32 h-32 bg-blue-600 rounded-full blur-2xl opacity-40 animate-bounce"></div>
     <img src="assets/Kid.jpg" alt="Kid"
-         class="relative w-full max-w-xs md:max-w-md lg:max-w-lg h-auto rounded-xl shadow-xl">
+         class="relative w-full max-w-xs md:max-w-md lg:max-w-lg h-auto rounded-xl shadow-xl transition-transform duration-300 hover:scale-105">
   </div>
 
 </div>
+
 
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
   <path fill="#1e3a8a" fill-opacity="1"

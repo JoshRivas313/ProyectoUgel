@@ -1,0 +1,18 @@
+
+<div class="mt-10 text-white">
+
+  <a href="{{ link }}"
+   class="inline-block font-semibold text-lg px-8 py-3 rounded-full shadow-md transition-all duration-300 ease-in-out transform"
+   [ngClass]="{
+     'bg-blue-500 hover:bg-blue-600 text-white hover:shadow-lg hover:scale-105': color === 'blue',
+     'bg-green-500 hover:bg-green-600 text-white hover:shadow-lg hover:scale-105': color === 'green',
+     'bg-red-500 hover:bg-red-600 text-white hover:shadow-lg hover:scale-105': color === 'red',
+     'bg-gray-500 hover:bg-gray-600 text-white hover:shadow-lg hover:scale-105': color === 'gray'
+   }"
+   >
+  {{ texto }}
+</a>
+
+</div>
+
+
