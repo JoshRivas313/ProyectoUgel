@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CaudroCentradoComponent } from '../../componentes/caudro-centrado/caudro-centrado.component';
+import { SubTituloComponent } from '../../componentes/sub-titulo/sub-titulo.component';
 
 @Component({
   selector: 'app-conocenos',
   standalone: true,
-  imports: [CommonModule , CaudroCentradoComponent],
+  imports: [CommonModule, CaudroCentradoComponent, SubTituloComponent],
   templateUrl: './conocenos.component.html',
   styleUrl: './conocenos.component.scss'
 })
