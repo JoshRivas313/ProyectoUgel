@@ -12,10 +12,10 @@ import { link } from 'fs';
 export class NavBarComponent {
 
   NavItems = [
-    { name :'Inicio' , link: '/home' },
-    { name :'Conocenos' , link: '/about' },
-    { name :'Equipo' , link: '/services' },
-    { name :'Dashboard' , link: '/contact' },
+    { name :'Inicio' , link: '/inicio' },
+    { name :'nosotros' , link: '/nosotros' },
+    { name :'conocenos' , link: '/conocenos' },
+    { name :'dashboard' , link: '/dashboard' },
   ]
 
 
