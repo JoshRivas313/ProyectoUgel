@@ -1,1 +1,91 @@
-<p>conocenos works!</p>
+<div *ngFor="let historia of historias" class="p-12 rounded-3xl flex flex-col md:flex-row items-center gap-12">
+
+  <!-- Imagen con superposición y texto -->
+  <div class="w-full md:w-1/2 relative group">
+    <div class="rounded-xl overflow-hidden shadow-lg relative">
+      <img [src]="historia.imagen" alt="Nuestra Historia" class="w-full h-auto object-cover rounded-xl transition-all duration-500 group-hover:scale-110">
+
+      <!-- Capa de superposición con texto -->
+      <div class="absolute inset-0 bg-black/60 flex flex-col items-center justify-center text-white p-6 text-center rounded-xl transition-opacity duration-500 group-hover:bg-black/70">
+        <h3 class="text-3xl font-bold drop-shadow-lg">{{ historia.titulo }}</h3>
+        <p class="text-lg mt-2 drop-shadow-md">{{ historia.descripcion }}</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contenido -->
+  <div class="w-full md:w-1/2 text-center md:text-left space-y-6 p-8 rounded-2xl ">
+
+    <!-- Título con Icono -->
+    <div class="flex items-center justify-center md:justify-start gap-4">
+      <div class="bg-blue-100 p-4 rounded-full shadow-lg">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-12 h-12 text-blue-700">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 19.5V5.75A2.75 2.75 0 016.75 3h10.5A2.75 2.75 0 0120 5.75v13.75m-8-14h6m-6 4h6m-6 4h6m-6 4h6" />
+        </svg>
+      </div>
+      <h2 class="text-4xl font-extrabold text-blue-900 drop-shadow-md">Nuestra Historia </h2>
+    </div>
+
+    <!-- Contenido -->
+    <p class="text-gray-700 text-lg leading-relaxed border-l-4 border-blue-500 pl-4 italic">
+      {{ historia.contenido1 }}
+    </p>
+    <p class="text-gray-700 text-lg leading-relaxed border-l-4 border-blue-500 pl-4 italic">
+      {{ historia.contenido2 }}
+    </p>
+
+    <!-- Botón animado -->
+    <a [href]="historia.link" class="inline-block bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-semibold shadow-lg transition-all duration-300 hover:bg-blue-800 hover:-translate-y-1 active:scale-95">
+      Más sobre Nosotros
+    </a>
+  </div>
+</div>
+
+
+
+
+
+<app-caudro-centrado></app-caudro-centrado>
+
+
+
+
+
+<div class="p-12 flex flex-col md:flex-row gap-8 items-center justify-center  rounded-3xl mt-10">
+
+  <!-- Sección de Información -->
+  <div class="w-full md:w-1/2 space-y-6 text-center md:text-left p-8">
+    <div class="flex items-center justify-center md:justify-start gap-4">
+      <div class="bg-blue-100 p-4 rounded-full shadow-lg">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-12 h-12 text-blue-700">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6-6m0 0l6 6m-6-6v18" />
+        </svg>
+      </div>
+      <h2 class="text-4xl font-extrabold text-blue-900 drop-shadow-md">Mesa de Partes Virtual</h2>
+    </div>
+
+    <p class="text-gray-700 text-lg leading-relaxed">
+      La <span class="font-semibold text-blue-700">Mesa de Partes Virtual</span> es una plataforma digital diseñada para agilizar la recepción y gestión de documentos, eliminando la necesidad de trámites presenciales y brindando un acceso más eficiente a los servicios administrativos.
+    </p>
+
+    <!-- Beneficios -->
+    <ul class="list-none text-gray-700 text-lg leading-relaxed space-y-2">
+      <li>📄 Recepción digital de documentos.</li>
+      <li>⚡ Atención rápida y sin colas.</li>
+      <li>🔒 Seguridad y trazabilidad de los archivos.</li>
+      <li>🌍 Accesible desde cualquier lugar.</li>
+    </ul>
+
+    <!-- Botón de Acceso -->
+    <a href="#" class="inline-block bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-semibold shadow-md transition-all duration-300 hover:bg-blue-800 hover:-translate-y-1 active:scale-95">
+      Acceder a la Plataforma
+    </a>
+  </div>
+
+  <!-- Imagen Ilustrativa -->
+  <div class="w-full md:w-1/2">
+    <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Mesa de Partes Virtual" class="rounded-2xl shadow-lg w-full h-auto object-cover">
+  </div>
+
+</div>
+

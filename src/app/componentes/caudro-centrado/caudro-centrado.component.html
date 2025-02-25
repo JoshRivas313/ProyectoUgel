@@ -1,0 +1,15 @@
+<div class="p-12 rounded-3xl flex flex-col md:flex-row items-center gap-12 bg-gray-50 shadow-lg">
+  <div *ngFor="let item of valores" class="w-full md:w-1/2 text-center md:text-left space-y-6 p-8">
+    <div class="flex items-center justify-center md:justify-start gap-4">
+      <div [ngClass]="item.bgColor" class="p-4 rounded-full shadow-lg">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-12 h-12" [ngClass]="item.iconColor">
+          <path stroke-linecap="round" stroke-linejoin="round" [attr.d]="item.iconPath" />
+        </svg>
+      </div>
+      <h2 class="text-4xl font-extrabold text-blue-900 drop-shadow-md">{{ item.titulo }}</h2>
+    </div>
+    <p class="text-gray-700 text-lg leading-relaxed border-l-4 pl-4 italic" [ngClass]="item.borderColor">
+      {{ item.descripcion }}
+    </p>
+  </div>
+</div>
