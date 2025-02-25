@@ -13,7 +13,7 @@ export class NavBarComponent {
 
   NavItems = [
     { name :'Inicio' , link: '/inicio' },
-    { name :'Equipo' , link: '/nosotros' },
+    { name :'Grupo' , link: '/nosotros' },
     { name :'Conocenos' , link: '/conocenos' },
     { name :'Dashboard' , link: '/dashboard' },
   ]
