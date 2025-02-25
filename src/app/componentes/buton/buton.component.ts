@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common';
 export class ButonComponent {
 
   @Input() texto: string = 'Click Aquí';
-  @Input() link: string = '#';
-  @Input() color: 'blue' | 'green' | 'red' | 'gray' = 'blue';
+    @Input() link: string = '#';
+    @Input() color: 'blue' | 'green' | 'red' | 'gray' = 'blue';
 
 }
