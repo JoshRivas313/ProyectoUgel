@@ -5,7 +5,10 @@
              after:transition-all after:duration-300 hover:after:scale-x-110">
     {{ texto }}
   </h1>
-  <p class="text-gray-700 text-lg md:text-xl leading-relaxed">
+  <p class="text-gray-700 text-lg md:text-xl leading-relaxed relative before:content-[''] before:absolute
+            before:left-0 before:top-1/2 before:h-0.5 before:w-6 before:bg-blue-400 before:rounded-full
+            before:transform before:-translate-y-1/2 before:transition-all before:duration-300
+            hover:before:w-10 hover:before:bg-blue-600">
     {{ subTexto }}
   </p>
 </div>

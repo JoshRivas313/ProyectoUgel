@@ -1,0 +1,31 @@
+<div class="mx-auto max-w-7xl px-6 mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+  <div *ngFor="let evento of eventos"
+       class="bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all overflow-hidden border border-gray-200">
+
+    <!-- Imagen con efecto de zoom -->
+    <div class="relative group">
+      <img [src]="evento.imagen" alt="Imagen del evento"
+           class="w-full h-52 object-cover transition-transform duration-300 group-hover:scale-105">
+      <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-50 transition-all flex items-end p-4">
+        <div>
+          <h2 class="text-white text-xl font-extrabold leading-tight">{{ evento.titulo }}</h2>
+          <p class="text-gray-200 text-sm">{{ evento.fecha }}</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contenido -->
+    <div class="p-6 space-y-4">
+      <p class="text-gray-700 text-base leading-relaxed">{{ evento.descripcion }}</p>
+
+      <!-- Botón con animación -->
+      <a href="#" class="text-blue-700 font-semibold flex items-center space-x-2 hover:text-blue-900 transition-all">
+        <span>Leer más</span>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+             class="w-5 h-5 transform transition-transform duration-200 group-hover:translate-x-1">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>

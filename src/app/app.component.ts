@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavBarComponent } from "./nav-bar/nav-bar.component";
 import { InicioComponent } from "./pages/inicio/inicio.component";
+import { FooterComponent } from './footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,8 @@ import { InicioComponent } from "./pages/inicio/inicio.component";
   imports: [
     RouterOutlet,
     NavBarComponent,
-    InicioComponent
+    InicioComponent,
+    FooterComponent
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
